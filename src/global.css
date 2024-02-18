@@ -1,0 +1,17 @@
+.singleItem {
+  background: #e7e7e7;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.allItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  background: black;
+  color: #fff;
+}
