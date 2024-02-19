@@ -55,6 +55,7 @@ const App = () => {
             <>
               <div className="singleItem">
                 <b>{element.name} </b>
+                <b>{element.id} </b>
                 <br /> <br />
                 <img
                   src={element.image}
@@ -66,6 +67,10 @@ const App = () => {
                 />
                 <br />
                 {element.info}
+                <br />
+                <Link to={`/movie/${element.id}`}>
+                  <button>More details</button>
+                </Link>
               </div>
             </>
           );

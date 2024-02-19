@@ -1,5 +1,15 @@
+import { useLocation } from "react-router-dom";
+
 const AboutPage = () => {
-  return <>This is about page!</>;
+  const { state } = useLocation();
+
+  return (
+    <>
+      {state.movie_name} <br />
+      <br />
+      <img src={state.image} />
+    </>
+  );
 };
 
 export default AboutPage;
